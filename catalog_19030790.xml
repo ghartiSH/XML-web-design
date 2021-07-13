@@ -1,0 +1,208 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!--Bharat Gharti Magar-->
+<!--2021/05/01-->
+<?xml-stylesheet type = "text/css" href="catalog_19030790.css"?> <!--Linking CSS-->
+<!--Referecning externa DTD File....!!!NOTE Must comment this whole line while validating XML against Schema-->
+<!DOCTYPE Shop SYSTEM "catalog_19030790.dtd"> 
+<!--REferencing external Schema File !!!Note Must remove this referencing while validating XML against DTD-->
+<Shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19030790.xsd">
+    <shop_name shop_id="sh1"> Shakira Music Store </shop_name>
+    <logo/>
+    <address> Address: Kathmandu, Nepal</address>
+    <contact type="primary">Contact(Primary): 01-234567 </contact>
+    <contact type="secondary"> Contact(Secondary): 01-987654 </contact>
+    <website> Website: www.shakiramusic.com </website>
+    <songs>
+        <song song_ID="s1">
+            <song_logo id="logo1"/>
+            <song_title> Title: See You Again </song_title>
+            <singer no_of_singer="2"> Singer(s): Wiz Khalifa Ft.Charlie Puth </singer>
+            <genre> Genre: Hiphop, Pop-Rap </genre>
+            <writers no_of_writers="7"> 
+                Written By: 
+                <writer> Charlie Puth </writer>
+                <writer> Cameron Thomaz </writer>
+                <writer> Andrew Cedar </writer>
+                <writer> Justin Franks </writer>
+                <writer> Dann Hume</writer>
+                <writer> Josh  Hardy </writer>
+                <writer> Phoebe Cockburn </writer>
+            </writers>
+            <length minLength="2"> Length: 3.49 </length> 
+            <date_released>
+                Date Released: 
+                <year>  2015 </year>
+                <month>  March </month>
+                <day> 10 </day>
+            </date_released>
+            <country> Country: USA </country>
+            <producer> Producer(s): DJ Frank E, Charlie Puth, Andrew Cedar  </producer>
+            <movie> Movie: Fast &#38; Furious </movie>
+            <lyrics type="Available | Unavailabe"> Lyrics: Available </lyrics> 
+            <rating min="1" max="5"> Rating: 5 </rating>
+            <price type='US'> Price: $ 5.00 </price>
+            <awards>
+                Awards Won: 
+                <award year="2015"> Hollywood Music in Media Awards </award>
+                <award year="2015"> Teen Choice Awards </award>
+                <award year="2016"> Critic's Choice Movie Awards </award>
+            </awards>
+        </song>
+
+        <song song_ID="s2">
+            <song_logo id="logo2"/>
+            <song_title> Title: Bohemian Rhapsody </song_title>
+            <singer no_of_singer="1"> Singer(s): Freddie Mercury, Queen  </singer>
+            <genre> Genre: Hard Rock, Progressive Pop  </genre>
+            <writers no_of_writers='1'> 
+                Written By: 
+                <writer> Freddie Mercury </writer>
+            </writers>
+            <length minLength="2"> Length: 5.55 </length>
+            <date_released>
+                Date Released: 
+                <year> 1975  </year>
+                <month> October  </month>
+                <day> 31 </day>
+            </date_released>
+            <country> Country: UK  </country>
+            <producer> Producer(s): Ray Thomas Baker, Queen</producer>
+            <album category="band"> Album: A night at the Opera </album>
+            <band> Band: Queen </band>
+            <lyrics type="Available | Unavailabe"> Lyrics: Available </lyrics> 
+            <rating min="1" max="5"> Rating: 5 </rating>
+            <price type='UK'> Price: &#163;5.00 </price>
+            <awards>
+                Awards Won: 
+                <award year="2004"> Grammy Hall of Fame </award>
+                <award year="1992">MTV Video Music Award for Best Video from a Film </award>
+            </awards>
+        </song>
+
+        <song song_ID="s4">
+            <song_logo id="logo4"/> 
+            <song_title> Title: Despacito  </song_title>
+            <singer no_of_singer="2"> Singer(s): Luis Fonsi Ft. Daddy Yankee </singer>
+            <genre> Genre: Latin Pop  </genre>
+            <writers no_of_writers='3'> 
+                Written By: 
+                <writer> Luis Rodriguez </writer>
+                <writer> Erika Ender </writer>
+                <writer> Ramon Ayala </writer>
+            </writers>
+            <length minLength="2">  Length: 3.47 </length>
+            <date_released>
+                Date Released: 
+                <year>  2017 </year>
+                <month>  January </month>
+                <day> 12 </day>
+            </date_released>
+            <country> Country: Spain </country>
+            <producer> Producer(s): Mauricio Rengifo, Andrés Torres </producer>
+            <album category="solo"> Album: Vida </album>
+            <lyrics type="Available | Unavailabe"> Lyrics: Unavailabe </lyrics> 
+            <rating min="1" max="5"> Rating: 5 </rating>
+            <price type='US'> Price: $ 5.00 </price>
+            <awards>
+                Awards Won: 
+                <award year="2017"> Latin Grammy for Record of the Year</award>
+                <award year="2017"> Latin Grammy for Song of the Year </award>
+                <award year="2017"> NRJ Music Award for International Song of the Year </award>
+            </awards>
+        </song>
+
+         <song song_ID="s3">
+            <song_logo id="logo3"/>
+            <song_title> Title: Tum hi ho</song_title>
+            <singer no_of_singer="1"> Singer(s):  Arijit Singh </singer>
+            <genre> Genre: Filmi, Acoustic, Indian pop </genre>
+            <writers no_of_writers='1'> 
+                Written By: 
+                <writer> Mithoon </writer>
+            </writers>
+            <length minLength="2"> Length: 4.22 </length>
+            <date_released>
+                Date Released: 
+                <year> 2013  </year>
+                <month>  March </month>
+                <day> 16 </day>
+            </date_released>
+            <country> Country: India </country>
+            <producer> Producer(s): Bhushan Kumar, Krishan Kumar, Mukesh Bhatt </producer>
+            <movie> Movie: Aashiqui 2  </movie>
+            <album category="movie"> Album: Aashiqui 2 </album>
+            <lyrics type="Available | Unavailabe"> Lyrics: Unavailable </lyrics> 
+            <rating min="1" max="5"> Rating: 4  </rating>
+            <price type='US'> Price: $ 3.00 </price>
+            <awards>
+                Awards Won: 
+                <award year="2014"> Song of the year Bollywood. </award>
+            </awards>
+        </song>
+
+        <song song_ID="s5">
+            <song_logo id="logo5"/> 
+            <song_title> Title: Mic Drop  </song_title>
+            <singer no_of_singer="7"> Singer(s): BTS FT. Designer </singer>
+            <genre> Genre: Hiphop, EDM, Trap  </genre>
+            <writers no_of_writers='6'> 
+                Written By: 
+                <writer> RM </writer>
+                <writer> Supreme Boi </writer>
+                <writer> Hitman Band</writer>
+                <writer> J-Hope </writer>
+                <writer> Pdogg </writer>
+                <writer> Steve Aoki </writer>
+            </writers>
+            <length minLength="2">  Length: 3.58 </length>
+            <date_released>
+                Date Released: 
+                <year>  2017 </year>
+                <month>  November </month>
+                <day> 24 </day>
+            </date_released>
+            <country> Country: Korea </country>
+            <producer> Producer(s): Steve Aoki, Pdogg </producer>
+            <album category="band"> Album: Face Yourself </album>
+            <lyrics type="Available | Unavailabe"> Lyrics: Unavailabe </lyrics> 
+            <rating min="1" max="5"> Rating: 4 </rating>
+            <price type='US'> Price: $ 5.00 </price>
+        </song>
+
+        <song song_ID="s6">
+            <song_logo id="logo6"/> 
+            <song_title> Title: Pray for me </song_title>
+            <singer no_of_singer="2"> Singer(s): Weekend FT. Kendrick Lamar </singer>
+            <genre> Genre: Pop-Rap  </genre>
+            <writers no_of_writers='6'> 
+                Written By: 
+                <writer> Abel Tesfaye </writer>
+                <writer> Kendrick Lamar </writer>
+                <writer> Duckworth</writer>
+                <writer> Adam Feeney </writer>
+                <writer> Jason Quenneville </writer>
+                <writer> Martin McKinney </writer>
+            </writers>
+            <length minLength="2">  Length: 3.31 </length>
+            <date_released>
+                Date Released: 
+                <year>  2018 </year>
+                <month>  February </month>
+            </date_released>
+            <country> Country: USA </country>
+            <producer> Producer(s): Doc McKinney, Frank Dukes </producer>
+            <movie> Movie: Black Panther </movie>
+            <album category="solo"> Album: Black Panther </album>
+            <lyrics type="Available | Unavailabe"> Lyrics: Available </lyrics> 
+            <rating min="1" max="5"> Rating: 5 </rating>
+            <price type='US'> Price: $ 6.00 </price>
+            <awards>
+                Awards Won: 
+                <award year="2019"> Juno Award for the Single of the Year </award>
+                <award year="2018"> Teen Choice Award for choice Collaboration </award>
+            </awards>
+        </song>
+        
+    </songs>
+    <description type="about"> &#169; 2021 | Shakira Music Store </description>
+</Shop>

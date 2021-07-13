@@ -1,0 +1,46 @@
+<!ELEMENT Shop (shop_name, logo, address, contact+, website?, songs, description)>
+<!ELEMENT shop_name (#PCDATA)>
+<!ELEMENT logo EMPTY>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT songs (song+)>
+<!ELEMENT song (song_logo, song_title, singer, genre, writers, length, date_released, country, producer, movie?, album?, band?, lyrics, rating, price, awards?)>
+<!ELEMENT song_logo EMPTY>
+<!ELEMENT song_title (#PCDATA)>
+<!ELEMENT singer (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT writers (#PCDATA|writer)*>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT date_released (#PCDATA|year|month|day)*>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT movie (#PCDATA)>
+<!ELEMENT album (#PCDATA)>
+<!ELEMENT band (#PCDATA)>
+<!ELEMENT lyrics (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT awards (#PCDATA|award)*>
+<!ELEMENT award (#PCDATA)>
+<!ELEMENT description ANY>
+
+<!ATTLIST shop_name shop_id ID #REQUIRED>
+<!ATTLIST contact type (primary | secondary) #IMPLIED>
+<!ATTLIST song song_ID ID #REQUIRED>
+<!ATTLIST song_logo id ID #REQUIRED>
+<!ATTLIST singer no_of_singer CDATA #REQUIRED>
+<!ATTLIST writers no_of_writers CDATA #IMPLIED>
+<!ATTLIST length minLength CDATA #IMPLIED>
+<!ATTLIST album category CDATA #IMPLIED>
+<!ATTLIST lyrics type CDATA #FIXED "Available | Unavailabe">
+<!ATTLIST rating min CDATA #FIXED "1" max CDATA #FIXED "5">
+<!ATTLIST price type (US | UK) #IMPLIED >
+<!ATTLIST award year CDATA #REQUIRED>
+<!ATTLIST description type CDATA #FIXED "about">
+
+

@@ -1,0 +1,163 @@
+
+Shop{
+    display: flex; flex-direction: column; justify-content: center;
+    background-color: #020202 ;
+    color: white;
+}
+shop_name{
+     font-size:48px; 
+     font-family:'Trebuchet MS'; 
+     display: flex;
+     justify-content: center; 
+     margin: 5px;
+     color:#FD46EA;
+}
+logo{
+    height: 300px; width: 300px; float: right;
+    background-image: url(shakira.png);
+    background-position: center;
+    margin-left: 42%;
+}
+address{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: fantasy;
+    margin-top: 5px;
+}
+contact{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: fantasy;
+    margin-top: 5px;
+}
+website{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: fantasy;
+    margin-top: 5px;
+}
+songs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+song {
+    height: 800px;
+    width: 520px;
+    display:flex; 
+    margin:50px; 
+    border: solid 2px #FD46EA; 
+    flex-direction: column ;
+    background-color:#020202;
+    line-height: 1.25;
+    font-size: 16px;
+    font-family:'Courier New';
+}
+song_logo{
+    height: 250px; 
+    display: flex;
+    justify-content: center;
+    border: solid 2px #FD46EA;
+    margin: 20px;
+    
+}
+ song_title{
+    margin-left: 10px;
+ }
+ singer{
+    margin-left: 10px;
+ }
+ genre{
+    margin-left: 10px;
+ }
+ writers{
+    margin-left: 10px;
+ }
+ writer{
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 50px;
+}
+ length{
+    margin-left: 10px;
+ }
+ date_released{
+    margin-left: 10px;
+ }
+ country{
+    margin-left: 10px;
+ }
+ producer{
+    margin-left: 10px;
+ }
+ album{
+    margin-left: 10px;
+ }
+ band{
+    margin-left: 10px;
+ }
+ movie{
+    margin-left: 10px;
+ }
+lyrics{
+    margin-left: 10px;
+}
+rating{
+    margin-left: 10px;
+}
+price{
+    margin-left: 10px;
+}
+awards{
+    margin-left: 10px;
+    
+}
+award{
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 50px;
+}
+description{
+   height: 20px; width: 100%;
+   border: solid 2px white;
+   text-align: center;
+   background-color: rgb(175, 161, 161);
+   color: black;
+   padding: 20px;
+}
+ #logo1 {
+    background-image: url(logo1.png);
+    background-position: center;
+ }
+ #logo2{
+    background-image: url(logo2.jpg);
+    background-position: center;
+ }
+ #logo3{
+    background-image: url(logo3.jpg);
+    background-position: center;
+ }
+ #logo4{
+   background-image: url(logo4.jpg);
+   background-position: center;
+}
+#logo5{
+   background-image: url(logo5.jpg);
+   background-position: center;
+}
+
+#logo6{
+   background-image: url(logo6.jpg);
+   background-position: center;
+}
+
+song:hover{
+   transform: scale(1.1);
+   background: rgb(212, 110, 238);
+}
+shop_name:hover{
+   transform: scale(1.1);
+}

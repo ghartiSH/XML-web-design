@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Shop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="shop_name"/>
+        <xs:element ref="logo"/>
+        <xs:element ref="address"/>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="contact"/>
+        <xs:element ref="website"/>
+        <xs:element ref="songs"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="shop_name">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="shop_id" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>  
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="logo">
+  </xs:element>
+
+  <xs:element name="address" type="xs:string"/>
+  
+  <xs:element name="contact">
+    <xs:complexType >
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type" use="optional">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="primary"/>
+                <xs:enumeration value="secondary"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent> 
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="website" type="xs:string"/>
+
+  <xs:element name="songs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="song"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="song">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="song_logo"/>
+        <xs:element ref="song_title"/>
+        <xs:element ref="singer"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="writers"/>
+        <xs:element ref="length"/>
+        <xs:element ref="date_released"/>
+        <xs:element ref="country"/>
+        <xs:element ref="producer"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="movie"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="album"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="band"/>
+        <xs:element ref="lyrics"/>
+        <xs:element ref="rating"/>
+        <xs:element ref="price"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="awards"/>
+      </xs:sequence>
+      <xs:attribute name="song_ID" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="song_logo">
+    <xs:complexType>
+      <xs:attribute name="id" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="song_title" type="xs:string"/>
+
+  <xs:element name="singer">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="no_of_singer" use="required" type="xs:integer"/>
+        </xs:extension>  
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="genre" type="xs:string"/>
+
+  <xs:element name="writers">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="writer"/>
+      </xs:sequence>
+      <xs:attribute name="no_of_writers" use="optional" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="writer" type="xs:string"/>
+
+  <xs:element name="length">
+    <xs:complexType mixed="true">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="minLength" use="optional" fixed="2" type="xs:integer"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="date_released">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="day"/>
+        <xs:element ref="month"/>
+        <xs:element ref="year"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="day" type="xs:integer"/>
+
+  <xs:element name="month" type="xs:string"/>
+
+  <xs:element name="year" type="xs:integer"/>
+
+  <xs:element name="country" type="xs:string"/>
+
+  <xs:element name="producer" type="xs:string"/>
+
+  <xs:element name="movie" type="xs:string"/>
+
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="category" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="band" type="xs:string"/>
+
+  <xs:element name="lyrics">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type" use="optional" type="xs:string" fixed="Available | Unavailabe"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rating">
+    <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute name="max" use="required" fixed="5" type="xs:integer"/>
+            <xs:attribute name="min" use="required" fixed="1" type="xs:integer"/>
+          </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="price">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="awards">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="award"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="award">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="year" use="required" type="xs:integer"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="description">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
